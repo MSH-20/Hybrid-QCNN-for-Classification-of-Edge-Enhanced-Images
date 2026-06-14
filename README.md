@@ -69,14 +69,14 @@ python train.py
 
 Configuration options in `train.py`:
 
-| Parameter | Description | Default |
-|---|---|---|
-| `USE_EDGES` | Train on Canny edge maps instead of raw pixels | `False` |
-| `SUBSET_SIZE` | Number of training samples (set `None` for full 60,000) | `3000` |
-| `N_EPOCHS` | Number of training epochs | `10` |
-| `BATCH_SIZE` | Batch size | `32` |
-| `LR` | Learning rate (Adam) | `0.01` |
-| `CLASSES` | Digit classes to classify | `[0, 1, 2, 3]` |
+| Parameter     | Description                                             | Default        |
+| ------------- | ------------------------------------------------------- | -------------- |
+| `USE_EDGES`   | Train on Canny edge maps instead of raw pixels          | `False`        |
+| `SUBSET_SIZE` | Number of training samples (set `None` for full 60,000) | `3000`         |
+| `N_EPOCHS`    | Number of training epochs                               | `10`           |
+| `BATCH_SIZE`  | Batch size                                              | `32`           |
+| `LR`          | Learning rate (Adam)                                    | `0.01`         |
+| `CLASSES`     | Digit classes to classify                               | `[0, 1, 2, 3]` |
 
 Model checkpoints are saved to `checkpoints/epoch_N.pth` after each epoch.
 
@@ -105,22 +105,22 @@ Setting `USE_EDGES=True` (in both `train.py` and `evaluate.py`) replaces raw pix
 
 Training on 4 classes (digits 0–3) with a 3,000-sample subset for 10 epochs:
 
-| Epoch | Loss | Accuracy |
-|---|---|---|
-| 1 | 0.7456 | 0.7193 |
-| 2 | 0.3534 | 0.8787 |
-| 3 | 0.3115 | 0.8900 |
-| 4 | 0.2995 | 0.8940 |
-| 5 | 0.2717 | 0.9040 |
-| 6 | 0.2736 | 0.9017 |
-| 7 | 0.2683 | 0.9030 |
-| 8 | 0.2401 | 0.9153 |
-| 9 | 0.2517 | 0.9140 |
-| 10 | 0.2433 | 0.9117 |
+| Epoch | Loss   | Accuracy |
+| ----- | ------ | -------- |
+| 1     | 0.7456 | 0.7193   |
+| 2     | 0.3534 | 0.8787   |
+| 3     | 0.3115 | 0.8900   |
+| 4     | 0.2995 | 0.8940   |
+| 5     | 0.2717 | 0.9040   |
+| 6     | 0.2736 | 0.9017   |
+| 7     | 0.2683 | 0.9030   |
+| 8     | 0.2401 | 0.9153   |
+| 9     | 0.2517 | 0.9140   |
+| 10    | 0.2433 | 0.9117   |
 
 Sample predictions on the test set:
 
-![Predictions](Figure_1.png)
+![Predictions](test.png)
 
 ## License
 
