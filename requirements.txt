@@ -1,0 +1,9 @@
+pennylane
+pennylane-lightning
+torch
+torchvision
+numpy
+matplotlib
+scikit-image
+opencv-python
+tqdm
