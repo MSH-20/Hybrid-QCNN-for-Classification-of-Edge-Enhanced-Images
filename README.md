@@ -88,7 +88,7 @@ python evaluate.py
 
 Loads a trained checkpoint and displays a grid of sample predictions versus ground truth labels.
 
-> **Note:** Keep `USE_EDGES`, `CHECKPOINT`, `BATCH_SIZE`, and `CLASSES` in `evaluate.py` consistent with the settings used in `train.py`.
+<!-- > **Note:** Keep `USE_EDGES`, `CHECKPOINT`, `BATCH_SIZE`, and `CLASSES` in `evaluate.py` consistent with the settings used in `train.py`. -->
 
 ## Model Details
 
@@ -122,6 +122,4 @@ Sample predictions on the test set:
 
 ![Predictions](test.png)
 
-## License
-
-Add your license here.
+<!-- ## License -->
