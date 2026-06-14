@@ -1,6 +1,6 @@
 # Hybrid QCNN for Classification of Edge-Enhanced Images
 
-A hybrid quantum-classical convolutional neural network (QCNN) for digit classification on MNIST data set, **achieving 91.5% accuracy** on a 4-class (digits 0-3) subset. The model combines a parameterized quantum circuit (acting as a "quantum convolution" over 2×2 image patches) with a classical fully-connected head, and supports training on either raw pixel intensities or Canny edge maps.
+A hybrid quantum-classical convolutional neural network (QCNN) for digit classification on MNIST data set, with it **achieving 91.5% accuracy** on a 4-class (digits 0-3) subset. The model combines a parameterized quantum circuit (acting as a "quantum convolution" over 2×2 image patches) with a classical fully-connected head, and supports training on either raw pixel intensities or Canny edge maps.
 
 ## Overview
 
