@@ -6,6 +6,8 @@ A hybrid quantum-classical convolutional neural network (QCNN) for digit classif
 
 Each 16×16 grayscale input image is divided into non-overlapping 2×2 patches. Every patch (4 pixel values) is angle-encoded into a 4-qubit quantum circuit, processed through entangling layers, and measured to produce 4 expectation values per patch. These quantum-derived feature maps are then pooled and passed through a small classical MLP for final classification.
 
+This architecture builds on two established ideas: the classical CNN paradigm of local filters + pooling + fully-connected layers (as in early models like LeNet-5), and the 'quanvolutional layer' concept from Henderson et al. (2020), which replaces classical convolutional filters with parameterized quantum circuits. This project implements and evaluates this hybrid approach on MNIST digit classification, including an edge-enhanced input variant using Canny edge detection
+
 ```
 Input image (16x16)
       │
